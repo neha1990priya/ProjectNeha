@@ -11,8 +11,7 @@ import com.cyient.utilities.DataProviderUtils;
 
 public class LoginTest extends WebDriverWrapper {
 	
-	@Test(dataProvider ="validCredentialTest", dataProviderClass = DataProviderUtils.class)
-	
+	@Test
 	public void validCredentialTest()
 	{
 	KholsLoginPage  login = new KholsLoginPage(driver);
@@ -32,7 +31,7 @@ public class LoginTest extends WebDriverWrapper {
 	//login.lastName();
 	}
 	
-	@Test(dataProvider ="errorMsgTest", dataProviderClass = DataProviderUtils.class)
+	@Test
 	
 	public void errorMsgTest(String email, String pass) {
 		KholsLoginPage login1 = new KholsLoginPage(driver);
