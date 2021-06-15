@@ -7,13 +7,13 @@ import org.testng.annotations.DataProvider;
 public class DataProviderUtils {
 	
 	@DataProvider
-	public Object[][] errorMsgTest()throws IOException {
-		Object [][] main = ExcelUtils.getsheetIntoObjectArray("src/test/resources/testdata/TestData.xlsx","errorMsgTest");
+	public Object[][] checkCartExcel()throws IOException {
+		Object [][] main = ExcelUtils.getsheetIntoObjectArray("src/test/resources/testdata/TestData.xlsx","CheckCartExcel");
 	return main;
 	}
 	@DataProvider
-	public Object[][] validCredentialExcelData()throws IOException {
-		Object [][] main = ExcelUtils.getsheetIntoObjectArray("src/test/resources/testdata/TestData.xlsx","ValidCredentialTest");
+	public Object[][] searchProductExcel()throws IOException {
+		Object [][] main = ExcelUtils.getsheetIntoObjectArray("src/test/resources/testdata/TestData.xlsx","SearchProductExcel");
 	return main;
 	}
 }
